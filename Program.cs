@@ -40,11 +40,13 @@ namespace httpclienttest
                     throw new Exception($"Failed to download {this.RemotePath} because {t.Result.ReasonPhrase}");
                 }
 
+                /*
                 var parentDir = System.IO.Path.GetDirectoryName(this.ArchivePath);
                 if (!System.IO.Directory.Exists(parentDir))
                 {
                     System.IO.Directory.CreateDirectory(parentDir);
                 }
+                */
 
                 using (var stream = new System.IO.FileStream(
                             this.ArchivePath,
