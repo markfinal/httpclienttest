@@ -19,3 +19,5 @@ matrix:
       - BAM_BUILD_MODE=Native
       - BAM_TOOLCHAIN_NAME=Gcc
       - BAM_TOOLCHAIN_VERSION=9
+script:
+ - dotnet restore
