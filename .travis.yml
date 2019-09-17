@@ -22,3 +22,5 @@ matrix:
 script:
  - dotnet restore
  - dotnet msbuild -p:Configuration=Release
+test:
+ - dotnet run
