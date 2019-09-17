@@ -21,3 +21,4 @@ matrix:
       - BAM_TOOLCHAIN_VERSION=9
 script:
  - dotnet restore
+ - dotnet msbuild -p:Configuration=Release
