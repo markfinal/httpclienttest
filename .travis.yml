@@ -5,6 +5,7 @@ notifications:
      on_success: always
      on_failure: always
 language: csharp
+solution: httpclienttest.sln
 before_script:
   - dotnet --version
 matrix:
@@ -18,5 +19,3 @@ matrix:
       - BAM_BUILD_MODE=Native
       - BAM_TOOLCHAIN_NAME=Gcc
       - BAM_TOOLCHAIN_VERSION=9
-install: nuget restore httpclienttest.sln
-script: msbuild /p:Configuration=Release httpclienttest.sln
